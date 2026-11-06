@@ -50,20 +50,36 @@
 
 ## 🚀 安装
 
-**方式一：手动安装**
-1. 把整个 `396-writing-coach/` 文件夹放到豆包 Skill 目录下：
-   - Windows: `C:\Users\<你>\.doubao\agent_mode\workspace\.user_skills\`
-   - macOS: `~/.doubao/agent_mode/workspace/.user_skills/`
-2. 重启豆包，新开对话，直接发："帮我批改这篇 396 论效文"并附上材料与作文即可。
-3. 第一次使用它会主动问你：报考院校在哪个省、目标分多少——按提示答即可。
+> 目标只有一个：让 `SKILL.md` 位于 `<你的 Skill 根目录>/.user_skills/396-writing-coach/SKILL.md`。
+> Skill 根目录因系统和安装方式不同会有差异（Windows 上通常在
+> `C:\Users\<你>\AppData\Local\Doubao\User Data\Default\.doubao\agent_mode\workspace\`），
+> 不确定时直接在豆包里问："我的 `.user_skills` 目录在哪？"以它返回的实际路径为准。
 
-**方式二：让豆包自己下载部署**
-复制下面这段发给豆包（需你的豆包具备读取该 GitHub 仓库的能力）：
+**方式一：git clone（推荐，后续可 `git pull` 更新）**
+```bash
+cd "<你的 .user_skills 目录>"
+git clone https://github.com/r3277795257-dot/396-writing-coach.git 396-writing-coach
 ```
-请从 GitHub 仓库 r3277795257-dot/396-writing-coach 下载整个 396-writing-coach 文件夹，
-安装到你的 Skill 目录（.user_skills 下）。安装完成后告诉我怎么用。
+
+**方式二：手动安装**
+1. 打开仓库页 → `Code` → `Download ZIP`，解压；
+2. 把解压出的整个 `396-writing-coach/` 文件夹（保证 `SKILL.md` 在文件夹根目录）放进 `.user_skills/`；
+3. 确认结构为 `.user_skills/396-writing-coach/SKILL.md`。
+
+**方式三：让豆包自己下载部署**
+把下面这段原样发给豆包：
 ```
-（豆包也可直接打开仓库页面的 "Code → Download ZIP"，解压后按方式一放置。）
+帮我安装一个 Skill，按下面步骤做，装完告诉我怎么触发：
+1. 从 https://github.com/r3277795257-dot/396-writing-coach 克隆或下载仓库（公开仓库，无需登录）；
+2. 先确定你当前环境的 .user_skills 目录（workspace/.user_skills）；
+3. 把仓库内容完整放入 .user_skills/396-writing-coach/，确保 SKILL.md 在该目录根下，
+   references/、assets/、examples/ 一并保留；
+4. 校验 SKILL.md 的 YAML 里有 name: 396-writing-coach；
+5. 汇报最终路径和第一次使用时需要我提供哪些信息。
+```
+
+安装完成后新开一个对话，直接发："帮我批改这篇 396 论效文"并附上材料与作文即可。
+第一次使用它会主动问你：作文类型、报考院校在哪个省、目标分多少——按提示答即可。
 
 ## 📊 数据来源与置信度
 
