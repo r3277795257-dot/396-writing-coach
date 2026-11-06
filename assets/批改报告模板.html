@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>396联考写作批改报告</title>
+<style>
+  body{margin:0;padding:0;background:#f6f8f9;color:#1f2937;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;line-height:1.75;}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 26px 60px;}
+  h1{font-size:22px;color:#0f766e;border-left:6px solid #0f766e;padding:4px 0 4px 14px;margin:0 0 4px;}
+  .meta{font-size:12px;color:#6b7280;margin-bottom:16px;}
+  h2{font-size:16px;color:#0f766e;background:#ecfdf5;border-left:4px solid #0f766e;padding:6px 12px;margin:24px 0 10px;border-radius:0 6px 6px 0;}
+  .card{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;margin-bottom:12px;}
+  .band{display:inline-block;padding:3px 12px;border-radius:6px;font-weight:700;font-size:14px;}
+  .b1{background:#dcfce7;color:#166534;} .b2{background:#d1fae5;color:#065f46;}
+  .b3{background:#fef9c3;color:#854d0e;} .b4{background:#ffedd5;color:#9a3412;}
+  .b5{background:#fee2e2;color:#991b1b;} .b0{background:#e5e7eb;color:#374151;}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0;}
+  th{background:#f3f4f6;border:1px solid #e5e7eb;padding:6px 8px;text-align:left;}
+  td{border:1px solid #e5e7eb;padding:6px 8px;vertical-align:top;}
+  .orig{color:#b91c1c;} .fix{color:#047857;} .kp{color:#0e7490;font-size:12px;}
+  .en{font-family:"Microsoft YaHei","PingFang SC",serif;background:#ecfeff;border:1px solid #a5f3fc;border-radius:4px;padding:0 4px;font-size:13px;color:#0e7490;}
+  .two{display:flex;gap:12px;flex-wrap:wrap;}
+  .two .col{flex:1;min-width:280px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;}
+  .disc{background:#fefce8;border:1.5px dashed #ca8a04;border-radius:10px;padding:12px 16px;font-size:12.5px;color:#422006;margin:16px 0;}
+  .ok{color:#047857;} .warn{color:#b45309;} .bad{color:#b91c1c;}
+  /* 谬误点对照卡（方案1：前后对照，论效文逐点） */
+  .cmp{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;margin-bottom:10px;}
+  .cmp-orig{background:#fef2f2;border-radius:6px;padding:8px 10px;font-size:13.5px;margin-bottom:4px;}
+  .cmp-orig .lbl{font-size:11px;color:#b91c1c;font-weight:700;}
+  .cmp-arrow{text-align:center;color:#0f766e;line-height:1;margin:2px 0;font-weight:700;}
+  .cmp-fix{background:#f0fdf4;border-radius:6px;padding:8px 10px;font-size:13.5px;margin-bottom:6px;}
+  .cmp-fix .lbl{font-size:11px;color:#047857;font-weight:700;}
+  .cmp-legend{font-size:12px;color:#374151;background:#f8fafc;border-radius:6px;padding:6px 10px;}
+  .cmp-legend b{color:#0e7490;}
+  .err{background:#fecaca;color:#7f1d1d;padding:0 3px;border-radius:3px;}
+  .good{background:#bbf7d0;color:#14532d;padding:0 3px;border-radius:3px;}
+  .num{vertical-align:super;font-size:10px;color:#dc2626;font-weight:700;}
+  .verdict-tag{display:inline-block;padding:1px 8px;border-radius:4px;font-size:12px;font-weight:700;margin-right:6px;}
+  .vt-ok{background:#dcfce7;color:#166534;} .vt-warn{background:#fef9c3;color:#854d0e;} .vt-bad{background:#fee2e2;color:#991b1b;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>396 联考写作批改报告</h1>
+<div class="meta">题型：__（论证有效性分析/论说文）｜ 题号：__ ｜ 批改日期：__ ｜ 序号：__ ｜ 依据：公开大纲+行业换算（模拟评分，非官方）</div>
+
+<!-- 1 总评 -->
+<h2>1. 总评</h2>
+<div class="card">
+  分数：<b>__/20</b>（非官方换算）｜ 档位：<span class="band b__">第__类卷（__-__分）</span> ｜ 置信度：__（低则提示人工复核）
+  <br>一句话结论：__
+</div>
+
+<!-- 2 地区校准 -->
+<h2>2. 地区校准（只提示，不调分）</h2>
+<div class="card">
+  全国基准：__/20（第__类卷偏__）<br>
+  地区参考（目标院校所在省：__）：__（约 1 档位以内偏__ / 或"当前无法验证"）<br>
+  依据与置信度：__ ｜ 数据状态：__
+</div>
+
+<!-- 3 历史对比 -->
+<h2>3. 历史对比</h2>
+<div class="card">上次错误 __ 次 → 本次 __ 次（改善/恶化）；已掌握：__；新出现：__；模板句使用：__</div>
+
+<!-- 4 题目解析 -->
+<h2>4. 题目解析</h2>
+<div class="card">
+  <!-- 论效模式 -->
+  <div class="en"><b>【论效文】材料论证结构</b><br>总论点：__<br>论据链：①__ ②__ ③__ ④__<br>候选谬误点：__</div>
+  <!-- 论说模式 -->
+  <div class="en"><b>【论说文】材料类型与立意方向</b><br>材料类型：__（寓言哲理/社会政策/名言观点/现象评述）<br>可立意方向：__<br>用户立意：__ ｜ 判定：准确/偏题/跑题</div>
+</div>
+
+<!-- 5 逐点批改（论效=谬误对照卡；论说=立意-结构-论证-语言诊断） -->
+<h2>5. 逐点批改</h2>
+<div style="font-size:12px;color:#6b7280;margin-bottom:10px;">论效文：每张卡=材料原文 → 用户攻击 → 判定（找点准/攻击狠/语言稳）→ 标准攻击话术。论说文：立意-结构-论证-语言四栏诊断。</div>
+
+<!-- 卡N：论效文谬误对照卡（复制此结构，每谬误点一张） -->
+<div class="cmp">
+  <div class="cmp-orig"><span class="lbl">材料原文 N</span><br>
+    材料论证句 <span class="err">绝对化/以偏概全…</span> <span class="num">①</span>
+  </div>
+  <div class="cmp-arrow">↓ 用户攻击</div>
+  <div class="cmp-fix"><span class="lbl">用户攻击 & 判定</span><br>
+    用户攻击内容<br>
+    判定：<span class="verdict-tag vt-ok">找点准</span><span class="verdict-tag vt-warn">攻击偏</span><span class="verdict-tag vt-bad">张冠李戴</span> ｜ 分析：<span class="verdict-tag vt-ok">深入</span><span class="verdict-tag vt-warn">只指不析</span>
+  </div>
+  <div class="cmp-legend"><b>图例</b>　<span style="color:#dc2626;font-weight:700;">①</span> 谬误类型 + 识别关键词 + 标准攻击话术模板
+  </div>
+</div>
+<!-- 更多卡…… -->
+
+<!-- 论说模式四栏诊断（选用） -->
+<div class="card">
+  <table>
+    <tr><th>维度</th><th>诊断</th><th>证据</th></tr>
+    <tr><td>立意</td><td class="ok">准确 / 偏题 / 跑题</td><td>__</td></tr>
+    <tr><td>结构</td><td>完整 / 残缺 / 混乱</td><td>__</td></tr>
+    <tr><td>论证</td><td>充分 / 堆论据不分析 / 逻辑跳跃</td><td>__</td></tr>
+    <tr><td>语言</td><td>流畅 / 有语病 / 较多语病</td><td>__</td></tr>
+    <tr><td>规范</td><td>题目 / 字数 / 错别字</td><td>__</td></tr>
+  </table>
+</div>
+
+<!-- 6 知识点 -->
+<h2>6. 知识点</h2>
+<div class="card">① 知识点：__（先讲规则）<br>② 材料示例：__ → 标准攻击/立意示例：__</div>
+
+<!-- 7 完善后文章 -->
+<h2>7. 完善后文章（AI 示例，非官方范文）</h2>
+<div class="two">
+  <div class="col"><b>保守提分版</b><br><span class="en">__</span></div>
+  <div class="col"><b>优化示范版（供学习参考）</b><br><span class="en">__</span></div>
+</div>
+
+<!-- 8 个人模板更新 -->
+<h2>8. 个人模板更新</h2>
+<div class="card">本次可入库句子：<span class="en">__</span>（功能位：__，槽位：__，已去重，扣题检查通过）</div>
+
+<!-- 9 下一步练习 -->
+<h2>9. 下一步练习</h2>
+<div class="card">本周重点（针对最弱项）：__</div>
+
+<!-- 10 学习档案卡 -->
+<h2>10. 学习档案卡（可复制续接）</h2>
+<div class="card">【学习档案卡 v__】<br>考试：__ ｜ 科目：396经济类联考 ｜ 写作目标：__ ｜ 目标院校所在省：__ ｜ 考试年份：__<br>近3次 均分/档位：__<br>高频错误 Top5：1.__ 2.__ 3.__ 4.__ 5.__<br>已掌握：__ ｜ 个人模板已用：__ ｜ 偏好：__ ｜ 地区校准偏好：__</div>
+
+<!-- 免责声明 -->
+<div class="disc">
+<b>【说明】</b><br>
+1. 本助手提供的档位、分数与修改建议，是 AI 依据公开大纲与行业通行换算做的<b>模拟评分，仅供练习参考，不构成、也不替代官方阅卷判断</b>（396 写作官方不公开分档细则，分档分值为非官方换算），正式分数以考试为准。<br>
+2. 文中"水区/旱区/评分偏松偏紧"均为<b>考研圈民间考生经验汇总，非教育部教育考试院或各省考试院的官方评分标准</b>，官方从未正式划分"水旱区"。<br>
+3. 地区信息<b>仅作约一个档位的区间参考，绝不会据此上调或下调你的全国基准档位</b>；中文写作地区数据稀疏、分歧大时，直接提示"当前无法验证"，不强行给出倾向。<br>
+4. 你的作文中的姓名、学校、考号、联系方式等已自动脱敏，不会写入学习档案；完善后文章为 AI 示例，非官方范文。<br>
+5. 你据此作出的备考、估分、志愿、调剂等决策由本人自行判断并承担相应后果。
+</div>
+
+</div>
+</body>
+</html>
